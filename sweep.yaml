@@ -26,4 +26,4 @@ parameters:
     min: 0.0
     max: 0.0005
   epochs:
-    values: [20, 60, 90]   # fixed number of epochs per run (increase if you like)
+    values: [20, 60, 90]   # fixed number of epochs per run 
