@@ -6,10 +6,10 @@ This repository demonstrates how to perform **Bayesian hyperparameter optimizati
 
 ## Project Structure
 .
-├── train.py # Model training script
-├── sweep.yaml # W&B sweep configuration file
-├── best_model.pth # Model file saved with best configuration
-└── README.md # This guide
+├── train.py # Model training script  
+├── sweep.yaml # W&B sweep configuration file  
+├── best_model.pth # Model file saved with best configuration  
+└── README.md # This guide  
 
 ---
 
