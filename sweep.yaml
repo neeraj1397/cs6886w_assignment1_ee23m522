@@ -1,0 +1,29 @@
+program: train.py
+project: cifar10-vgg-hparams
+method: bayes
+metric:
+  name: val_acc
+  goal: maximize
+parameters:
+  activation:
+    values: ["relu", "silu", "gelu", "selu"]
+  learning_rate:
+    distribution: uniform
+    min: 0.0001
+    max: 0.01
+  batch_size:
+    values: [64, 128, 256, 512]
+  optimizer:
+    values: ["adam", "sgd", "rmsprop", "nadam"]
+  momentum:
+    distribution: uniform
+    min: 0.0
+    max: 0.9
+  batch_norm:
+    values: [true, false]
+  weight_decay:
+    distribution: uniform
+    min: 0.0
+    max: 0.0005
+  epochs:
+    values: [20, 60, 90]   # fixed number of epochs per run (increase if you like)
