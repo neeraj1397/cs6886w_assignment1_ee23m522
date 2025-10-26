@@ -1,0 +1,111 @@
+VGG(
+  (features): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): SELU(inplace=True)
+    (3): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): SELU(inplace=True)
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (7): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (8): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (9): SELU(inplace=True)
+    (10): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (11): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (12): SELU(inplace=True)
+    (13): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=128, out_features=10, bias=True)
+  )
+)
+Epoch 1/90 - loss: 1.9168 train_acc: 29.08 val_acc: 37.94
+Epoch 2/90 - loss: 1.6951 train_acc: 37.84 val_acc: 45.48
+Epoch 3/90 - loss: 1.5823 train_acc: 40.96 val_acc: 53.06
+Epoch 4/90 - loss: 1.4977 train_acc: 42.05 val_acc: 56.32
+Epoch 5/90 - loss: 1.4410 train_acc: 42.62 val_acc: 52.43
+Epoch 6/90 - loss: 1.3961 train_acc: 41.40 val_acc: 54.77
+Epoch 7/90 - loss: 1.3561 train_acc: 41.02 val_acc: 57.48
+Epoch 8/90 - loss: 1.3229 train_acc: 43.94 val_acc: 56.02
+Epoch 9/90 - loss: 1.2987 train_acc: 50.74 val_acc: 64.17
+Epoch 10/90 - loss: 1.2742 train_acc: 51.93 val_acc: 65.39
+Epoch 11/90 - loss: 1.2573 train_acc: 53.06 val_acc: 66.48
+Epoch 12/90 - loss: 1.2402 train_acc: 47.01 val_acc: 67.04
+Epoch 13/90 - loss: 1.2244 train_acc: 49.56 val_acc: 64.71
+Epoch 14/90 - loss: 1.2085 train_acc: 48.71 val_acc: 65.93
+Epoch 15/90 - loss: 1.1887 train_acc: 53.82 val_acc: 69.14
+Epoch 16/90 - loss: 1.1873 train_acc: 51.16 val_acc: 68.22
+Epoch 17/90 - loss: 1.1641 train_acc: 46.75 val_acc: 65.90
+Epoch 18/90 - loss: 1.1560 train_acc: 40.20 val_acc: 61.94
+Epoch 19/90 - loss: 1.1487 train_acc: 42.79 val_acc: 62.83
+Epoch 20/90 - loss: 1.1455 train_acc: 36.16 val_acc: 53.72
+Epoch 21/90 - loss: 1.1252 train_acc: 53.11 val_acc: 68.97
+Epoch 22/90 - loss: 1.1213 train_acc: 47.87 val_acc: 64.16
+Epoch 23/90 - loss: 1.1154 train_acc: 46.55 val_acc: 59.41
+Epoch 24/90 - loss: 1.1080 train_acc: 56.32 val_acc: 70.46
+Epoch 25/90 - loss: 1.0915 train_acc: 49.12 val_acc: 66.68
+Epoch 26/90 - loss: 1.0919 train_acc: 46.24 val_acc: 66.35
+Epoch 27/90 - loss: 1.0877 train_acc: 52.64 val_acc: 63.91
+Epoch 28/90 - loss: 1.0800 train_acc: 38.84 val_acc: 61.74
+Epoch 29/90 - loss: 1.0698 train_acc: 52.99 val_acc: 69.21
+Epoch 30/90 - loss: 1.0615 train_acc: 40.71 val_acc: 69.11
+Epoch 31/90 - loss: 1.0596 train_acc: 46.44 val_acc: 68.17
+Epoch 32/90 - loss: 1.0519 train_acc: 44.71 val_acc: 68.01
+Epoch 33/90 - loss: 1.0502 train_acc: 53.48 val_acc: 70.51
+Epoch 34/90 - loss: 1.0498 train_acc: 52.78 val_acc: 72.99
+Epoch 35/90 - loss: 1.0385 train_acc: 46.08 val_acc: 66.09
+Epoch 36/90 - loss: 1.0414 train_acc: 48.67 val_acc: 71.51
+Epoch 37/90 - loss: 1.0315 train_acc: 57.22 val_acc: 73.50
+Epoch 38/90 - loss: 1.0341 train_acc: 54.70 val_acc: 72.47
+Epoch 39/90 - loss: 1.0226 train_acc: 48.39 val_acc: 65.88
+Epoch 40/90 - loss: 1.0179 train_acc: 51.17 val_acc: 67.02
+Epoch 41/90 - loss: 1.0158 train_acc: 39.24 val_acc: 54.84
+Epoch 42/90 - loss: 1.0102 train_acc: 42.66 val_acc: 65.85
+Epoch 43/90 - loss: 1.0088 train_acc: 45.99 val_acc: 67.84
+Epoch 44/90 - loss: 1.0077 train_acc: 54.53 val_acc: 71.93
+Epoch 45/90 - loss: 1.0044 train_acc: 54.89 val_acc: 71.89
+Epoch 46/90 - loss: 0.9979 train_acc: 34.79 val_acc: 58.69
+Epoch 47/90 - loss: 1.0004 train_acc: 39.40 val_acc: 59.02
+Epoch 48/90 - loss: 0.9862 train_acc: 51.14 val_acc: 70.26
+Epoch 49/90 - loss: 0.9913 train_acc: 54.33 val_acc: 72.47
+Epoch 50/90 - loss: 0.9919 train_acc: 52.03 val_acc: 69.03
+Epoch 51/90 - loss: 0.9860 train_acc: 52.10 val_acc: 70.61
+Epoch 52/90 - loss: 0.9793 train_acc: 52.14 val_acc: 73.22
+Epoch 53/90 - loss: 0.9807 train_acc: 47.13 val_acc: 72.58
+Epoch 54/90 - loss: 0.9825 train_acc: 57.84 val_acc: 74.61
+Epoch 55/90 - loss: 0.9740 train_acc: 51.10 val_acc: 72.65
+Epoch 56/90 - loss: 0.9787 train_acc: 54.57 val_acc: 71.45
+Epoch 57/90 - loss: 0.9729 train_acc: 48.74 val_acc: 70.29
+Epoch 58/90 - loss: 0.9702 train_acc: 39.21 val_acc: 64.69
+Epoch 59/90 - loss: 0.9667 train_acc: 52.43 val_acc: 73.88
+Epoch 60/90 - loss: 0.9671 train_acc: 62.59 val_acc: 76.71
+Epoch 61/90 - loss: 0.9593 train_acc: 55.74 val_acc: 74.45
+Epoch 62/90 - loss: 0.9572 train_acc: 37.69 val_acc: 63.77
+Epoch 63/90 - loss: 0.9502 train_acc: 50.73 val_acc: 73.32
+Epoch 64/90 - loss: 0.9526 train_acc: 56.29 val_acc: 72.59
+Epoch 65/90 - loss: 0.9579 train_acc: 44.18 val_acc: 68.66
+Epoch 66/90 - loss: 0.9564 train_acc: 64.05 val_acc: 78.17
+Epoch 67/90 - loss: 0.9486 train_acc: 54.51 val_acc: 70.85
+Epoch 68/90 - loss: 0.9522 train_acc: 55.38 val_acc: 74.14
+Epoch 69/90 - loss: 0.9447 train_acc: 54.81 val_acc: 73.63
+Epoch 70/90 - loss: 0.9434 train_acc: 59.50 val_acc: 75.76
+Epoch 71/90 - loss: 0.9337 train_acc: 51.16 val_acc: 70.39
+Epoch 72/90 - loss: 0.9429 train_acc: 53.87 val_acc: 75.62
+Epoch 73/90 - loss: 0.9492 train_acc: 51.97 val_acc: 70.21
+Epoch 74/90 - loss: 0.9396 train_acc: 54.87 val_acc: 72.39
+Epoch 75/90 - loss: 0.9354 train_acc: 45.96 val_acc: 68.63
+Epoch 76/90 - loss: 0.9384 train_acc: 59.09 val_acc: 79.48
+Epoch 77/90 - loss: 0.9332 train_acc: 61.49 val_acc: 77.09
+Epoch 78/90 - loss: 0.9266 train_acc: 40.22 val_acc: 68.66
+Epoch 79/90 - loss: 0.9358 train_acc: 43.82 val_acc: 69.70
+Epoch 80/90 - loss: 0.9332 train_acc: 64.18 val_acc: 78.11
+Epoch 81/90 - loss: 0.9294 train_acc: 42.40 val_acc: 68.71
+Epoch 82/90 - loss: 0.9269 train_acc: 54.43 val_acc: 76.45
+Epoch 83/90 - loss: 0.9231 train_acc: 48.22 val_acc: 68.81
+Epoch 84/90 - loss: 0.9212 train_acc: 51.69 val_acc: 68.28
+Epoch 85/90 - loss: 0.9195 train_acc: 59.15 val_acc: 77.51
+Epoch 86/90 - loss: 0.9148 train_acc: 63.64 val_acc: 78.12
+Epoch 87/90 - loss: 0.9186 train_acc: 51.25 val_acc: 72.52
+Epoch 88/90 - loss: 0.9158 train_acc: 49.26 val_acc: 72.82
+Epoch 89/90 - loss: 0.9157 train_acc: 56.79 val_acc: 74.65
+Epoch 90/90 - loss: 0.9239 train_acc: 59.22 val_acc: 78.18
