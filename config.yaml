@@ -1,0 +1,79 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        e:
+            9dqnw60s3twpahz1wts22yudm9qshh58:
+                args:
+                    - --activation=selu
+                    - --batch_norm=True
+                    - --batch_size=64
+                    - --epochs=90
+                    - --learning_rate=0.00351147544245589
+                    - --momentum=0.8247395191150262
+                    - --optimizer=nadam
+                    - --weight_decay=2.0531225329636637e-05
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 6
+                cpu_count_logical: 12
+                cudaVersion: "12.4"
+                disk:
+                    /:
+                        total: "120942624768"
+                        used: "42979041280"
+                email: neerajcher@gmail.com
+                executable: /usr/bin/python3
+                gpu: NVIDIA A100-SXM4-40GB
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "42949672960"
+                      name: NVIDIA A100-SXM4-40GB
+                      uuid: GPU-71acc3ac-9f45-4271-0df3-272ef302b049
+                host: 8bbe5337b033
+                memory:
+                    total: "89629224960"
+                os: Linux-6.6.105+-x86_64-with-glibc2.35
+                program: /content/train.py
+                python: CPython 3.12.12
+                root: /content
+                startedAt: "2025-10-26T11:42:17.794124Z"
+                writerId: 9dqnw60s3twpahz1wts22yudm9qshh58
+        m: []
+        python_version: 3.12.12
+        t:
+            "1":
+                - 1
+                - 41
+                - 105
+            "2":
+                - 1
+                - 41
+                - 105
+            "3":
+                - 2
+                - 3
+                - 14
+                - 16
+                - 17
+            "4": 3.12.12
+            "5": 0.22.2
+            "12": 0.22.2
+            "13": linux-x86_64
+activation:
+    value: selu
+batch_norm:
+    value: true
+batch_size:
+    value: 64
+epochs:
+    value: 90
+learning_rate:
+    value: 0.00351147544245589
+momentum:
+    value: 0.8247395191150262
+optimizer:
+    value: nadam
+weight_decay:
+    value: 2.0531225329636637e-05
